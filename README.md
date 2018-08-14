@@ -8,4 +8,4 @@
 > 
 > 给出一些例子代码：
 > 
->     return shell_exec("echo $input | $markdown_script");
+return shell_exec("echo $input | $markdown_script");
