@@ -42,4 +42,4 @@ Suspendisse id sem consectetuer libero luctus adipiscing.
 
 这是一个普通段落：
 
-    这是一个代码区块。
+    console.log('red')
