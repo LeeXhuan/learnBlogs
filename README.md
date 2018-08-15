@@ -9,17 +9,17 @@ LearnMarkDown
 H1-H6标题
 ------------------
 ># H1
->+ H1用：`# name`(#标题名称) 
+> > H1用：`# name`(#标题名称) 
 >## H2
->+ H2用：`## name`  
+> > H2用：`## name`  
 >### H3
->+ H3用：`### name`  
+> > H3用：`### name`  
 >#### H4
->+ H4用：`#### name`  
+> > H4用：`#### name`  
 >##### H5
->+ H5用：`##### name`  
+> > H5用：`##### name`  
 >###### H6
->+ H6用：`###### name`
+> > H6用：`###### name`
 
 ## 这是一个列表
 
@@ -32,8 +32,3 @@ H1-H6标题
 *   Red
 *   Green
 *   Blue
-> This is the first level of quoting.
->
-> > This is nested blockquote.
->
-> Back to the first level.
