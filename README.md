@@ -28,7 +28,9 @@ H1-H6标题
 
 
 > 给出一些例子代码：
-> 
+
+> 列表项目标记通常是放在最左边，但是其实也可以缩进，最多 3 个空格，项目标记后面则一定要接着至少一个空格或制表符。
+要让列表看起来更漂亮，你可以把内容用固定的缩进整理好
 *   Red
 *   Green
 *   Blue
@@ -37,3 +39,7 @@ Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,
 viverra nec, fringilla in, laoreet vitae, risus.
 *   Donec sit amet nisl. Aliquam semper ipsum sit amet velit.
 Suspendisse id sem consectetuer libero luctus adipiscing.
+
+这是一个普通段落：
+
+    这是一个代码区块。
