@@ -8,12 +8,12 @@ LearnMarkDown
 
 H1-H6标题
 ------------------
-* H1用：`#name`(#标题名称)
-* H2用：`##name`
-* H3用：`###name`
-* H4用：`####name`
-* H5用：`#####name`
-* H6用：`######name`
++ H1用：`#name`(#标题名称) #name
++ H2用：`##name`  ##name
++ H3用：`###name`  ###name
++ H4用：`####name`  ####name
++ H5用：`#####name`  #####name
++ H6用：`######name`  ######name
 > ## 这是一个H2标题
 > 
 >1.   这是第一行列表项。
