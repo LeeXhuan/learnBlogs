@@ -8,7 +8,7 @@ LearnMarkDown
 
 H1-H6标题
 ------------------
-#H1
+>#H1
 + H1用：`#name`(#标题名称) 
 + H2用：`##name`  ##name
 + H3用：`###name`  ###name
