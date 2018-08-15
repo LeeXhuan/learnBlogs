@@ -26,11 +26,12 @@ H1-H6标题
 >1.   这是第一行列表项。
 >4.   这是第二行列表项。
 
-
-> 给出一些例子代码：
+> 使用`*  `、`+  `、 `-  `完成对于列表的标识，或者用阿拉伯数字+英文句点（`1.  `）。
 
 > 列表项目标记通常是放在最左边，但是其实也可以缩进，最多 3 个空格，项目标记后面则一定要接着至少一个空格或制表符。
 要让列表看起来更漂亮，你可以把内容用固定的缩进整理好
+
+> 给出一些例子代码：
 *   Red
 *   Green
 *   Blue
@@ -40,6 +41,18 @@ viverra nec, fringilla in, laoreet vitae, risus.
 *   Donec sit amet nisl. Aliquam semper ipsum sit amet velit.
 Suspendisse id sem consectetuer libero luctus adipiscing.
 
-这是一个普通段落：
+code展示（面向对象编程）：
 
-    console.log('red')
+    const red = {
+        init: function() {
+            red.bind();
+        },
+        bind: function() {
+            if(true){
+                console.log('true');
+            }else{
+                console.log('false');
+            }
+        }
+    }
+    red.init();
