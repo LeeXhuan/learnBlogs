@@ -44,24 +44,22 @@ Suspendisse id sem consectetuer libero luctus adipiscing.
 
 code展示（面向对象编程）：
 
-    const red = {
+    const count = {
         init: function() {
             red.bind();
         },
         bind: function() {
-            var year = 1990, num =0;
-            //year是你输入的值 num 用来统计输出的次数
-            for(var i = 0 ;; i++) {
+            var year = 1990, count =0;
+            //year是你输入的值 count 用来统计输出的次数
+            for(var i = 0 ;count < 5; i++) {
                 //判断输出次数是不是小于五次
-                if(num < 5) {
-                    //判断润年
-                    if ((year + i) % 4 == 0) && ((year + i) % 100 != 0 ||(year + i) % 400 == 0) {
-                        console.log(year + i);
-                        //是润年输出次数加一
-                        num = num + 1;
-                    }    
+                //判断润年
+                if ((year + i) % 4 == 0) && ((year + i) % 100 != 0 || (year + i) % 400 == 0) {
+                    console.log(year + i);
+                    //是润年输出次数加一
+                    count++;
                 }
             }
         }
     }
-    red.init();
+    count.init();
