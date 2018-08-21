@@ -37,5 +37,5 @@ baz | baz  | baz
 ## 我想写的一个表格
 name     | xiahuan      |   libinbin | liyang
 ---------| ------------:|:---------- |:-----:
-name     | xiahuan      |   libinbin | liyang
-name     | xiahuan      |   libinbin | liyang
+name     | xia      |   bin | li
+name     | x     |   libi | l
