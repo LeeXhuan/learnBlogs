@@ -4,7 +4,7 @@
 * 2018.8.21 14:53 by-xiahuan
 */
 ```
-# 数组
+## 数组
 
 1. push()*方法可以接收任意数量的参数，把它们逐个添加到数组末尾，并返回修改后**数组的长度***
 2. pop() *方法则从数组末尾移除最后一项，减少数组的长度，并且返回**移除的项***
@@ -13,14 +13,14 @@
 
 ![](http://latex.codecogs.com/gif.latex?\prod%20\(n_{i}\)+1)
 
-# 表格1
+## 表格1
 | Tables        | Are           | Cool  |
 | ------------- |:-------------:| -----:|
 | col 3 is      | right-aligned | $1600 |
 | col 2 is      | centered      |   $12 |
 | zebra stripes | are neat      |    $1 |
 
-# 表格2
+## 表格2
 dog | bird | cat
 ----|------|----
 foo | foo  | foo
