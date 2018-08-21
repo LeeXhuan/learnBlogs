@@ -12,3 +12,17 @@
 [简书指导文档](https://www.jianshu.com/p/q81RER)
 
 ![](http://latex.codecogs.com/gif.latex?\prod%20\(n_{i}\)+1)
+
+# 表格1
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+
+# 表格2
+dog | bird | cat
+----|------|----
+foo | foo  | foo
+bar | bar  | bar
+baz | baz  | baz
