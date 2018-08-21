@@ -11,4 +11,4 @@
 
 [简书指导文档](https://www.jianshu.com/p/q81RER)
 
-![][http://latex.codecogs.com/gif.latex?\prod%20\(n_{i}\)+1]
+![](http://latex.codecogs.com/gif.latex?\prod%20\(n_{i}\)+1)
