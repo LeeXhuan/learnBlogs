@@ -33,3 +33,9 @@ dog | bird | cat
 foo | foo  | foo
 bar | bar  | bar
 baz | baz  | baz
+
+## 我想写的一个表格
+name     | xiahuan      |   libinbin | liyang
+---------| ------------:|:---------- |:-----:
+name     | xiahuan      |   libinbin | liyang
+name     | xiahuan      |   libinbin | liyang
