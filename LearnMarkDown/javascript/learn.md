@@ -63,9 +63,9 @@
 |Trident       | Webkit            | Gecko              | 基于Webkit修改的X5内核 | 基于Webkit修改的U3内核|
 |:------------:|:-----------------:|:------------------:|:---------------------:|:--------------------:|
 | IE手机版 | Opera手机版  | Firefox手机版 | QQ手机浏览器 | UC手机浏览器内核 |
-| IE手机版 | Opera PC版  | Firefox PC版 | 微信| ~ |
-| IE PC版 | Chrome手机版 | ~ | ~ | ~ |
-| IE PC版 | Chrome PC版 | ~ | ~ | ~ |
+| IE PC版 | Opera PC版  | Firefox PC版 | 微信| ~ |
+| ~ | Chrome手机版 | ~ | ~ | ~ |
+| ~ | Chrome PC版 | ~ | ~ | ~ |
 | ~ | Safari手机版 | ~ | ~ | ~ |
 | ~ | Safari PC版 | ~ | ~ | ~ |
 
