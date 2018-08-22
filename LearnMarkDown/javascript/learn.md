@@ -62,7 +62,10 @@
 ## 手机浏览器内核
 |Trident       | Webkit            | Gecko              | 基于Webkit修改的X5内核 | 基于Webkit修改的U3内核|
 |:------------:|:-----------------:|:------------------:|:---------------------:|:--------------------:|
-|IE手机版PC版 | Opera手机版和PC版  | Firefox手机版和PC版 | QQ手机浏览器 | UC手机浏览器内核 |
-| IE PC版 | Chrome手机版和PC版| Firefox PC版 | 微信 | ~ |
-| ~ | Safari手机版和PC版 | ~ | ~ | ~ |
+| IE手机版 | Opera手机版和PC版  | Firefox手机版和PC版 | QQ手机浏览器 | UC手机浏览器内核 |
+| IE手机版 | Opera PC版  | Firefox PC版 | 微信| ~ |
+| IE PC版 | Chrome手机版 | Firefox PC版 | ~ | ~ |
+| IE PC版 | Chrome PC版 | ~ | ~ | ~ |
+| ~ | Safari手机版 | ~ | ~ | ~ |
+| ~ | Safari PC版 | ~ | ~ | ~ |
 
