@@ -52,13 +52,6 @@
 
 ![](http://latex.codecogs.com/gif.latex?\prod%20\(n_{i}\)+1)
 
-## 表格1
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
-
 ## 手机浏览器内核
 |Trident       | Webkit            | Gecko              | 基于Webkit修改的X5内核 | 基于Webkit修改的U3内核|
 |:------------:|:-----------------:|:------------------:|:---------------------:|:--------------------:|
