@@ -30,11 +30,14 @@
     //对于arr里面是大多数数据类型而言
     arr.sort(function(a,b){
         if (a < b) {
-            return -1;//a应该位于b之前
+            //a应该位于b之前 返回负数
+            return -1;
         } else if (a > b) {
-            return 1; //a应该位于b之后
+            //a应该位于b之后 返回正数
+            return 1; 
         }else{
-            return 0;// a和b相等 位置不变
+            // a和b相等 位置不变 返回0
+            return 0;
         }
     });
 ```
