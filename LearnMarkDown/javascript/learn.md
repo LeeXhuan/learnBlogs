@@ -20,8 +20,24 @@
 >   IE7及更早版本对JavaScript的实现中存在一个偏差，其unshift()方法总是返回undefined而不是数组的新长度。IE8在非兼容模式下会返回正确的长度值。
 5. reverse() *对于数组项的顺序实现反转*
 6. sort() 
-> *1. 默认情况下 按照从小到大升序排列数组项*   
-> *2. 我要换个行*
+> *1. 默认情况下 按照从小到大升序排列数组项(sort()方法会调用每个数组项的toString()转型方法，然后比较得到的字符串，以确定如何排序，即使数组中的每一项都是数字，它也会如此操作)*   
+> *2. 一般需要传入一个比较函数作为sort的参数*    
+```
+    //对于arr里面都是数字或者其valueOf()方法会返回数值类型的对象类型而言
+    arr.sort(function(a,b){
+        return a-b;
+    });
+    //对于arr里面是大多数数据类型而言
+    arr.sort(function(a,b){
+        if (a < b) {
+            return -1;//a应该位于b之前
+        } else if (a > b) {
+            return 1; //a应该位于b之后
+        }else{
+            return 0;// a和b相等 位置不变
+        }
+    });
+```
 
 [简书指导文档](https://www.jianshu.com/p/q81RER)
 
