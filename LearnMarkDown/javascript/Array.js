@@ -31,5 +31,5 @@ console.dir(d);
     return parseInt(item, idx);
 });
 
-//尝试看看 还是要密码？？？
+//登陆一次之后不需要密码了
 removeRepetitionItem(c);
