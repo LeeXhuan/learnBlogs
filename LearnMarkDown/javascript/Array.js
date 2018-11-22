@@ -31,5 +31,5 @@ console.dir(d);
     return parseInt(item, idx);
 });
 
-//尝试看看
+//尝试看看 还是要密码？？？
 removeRepetitionItem(c);
