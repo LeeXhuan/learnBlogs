@@ -10,3 +10,8 @@
 4. 使用git branch -a 查看这个项目的所有分支
 >
 ![](https://github.com/LeeXhuan/LearnMarkDown/blob/master/LearnMarkDown/git_study/img/20181128212114.png)
+``````
+    var name = {
+
+    }
+``````
