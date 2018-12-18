@@ -43,7 +43,7 @@ viverra nec, fringilla in, laoreet vitae, risus.
 Suspendisse id sem consectetuer libero luctus adipiscing.
 
 code展示（面向对象编程）：
-
+```javascript
     const count = {
         init: function() {
             red.bind();
@@ -63,3 +63,4 @@ code展示（面向对象编程）：
         }
     }
     count.init();
+```
