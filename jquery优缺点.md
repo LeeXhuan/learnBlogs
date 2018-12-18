@@ -1,5 +1,5 @@
 # 1.什么是`JQuery`?
-1. `JQuery`是一个优秀的javascript框架。
+1. `JQuery`是一个优秀的`javascript`框架。
 1. `JQuery`是继`Prototype`之后又一个优秀的`Javascript`框架。其宗旨是——`WRITE LESS,DO MORE`,写更少的代码,做更多的事情。它是轻量级的`js`库，这是其它的`js`库所不及的，它兼容`CSS3`，还兼容各种常用浏览器。
 1. `JQuery`是一个快速的，简洁的`JavaScript`库，使用户能更方便地处理`HTMLdocuments`、`events`、实现动画效果，并且方便地为网站提供AJAX交互。
 1. `JQuery`还有一个比较大的优势是，它的文档说明很全，而且各种应用也说得很详细，同时还有许多成熟的插件可供选择。`JQuery`能够使用户的`html`页保持代码和`html`内容分离，也就是说，不用再在`html`里面插入一堆`js`来调用命令了，只需定义`id`即可。
