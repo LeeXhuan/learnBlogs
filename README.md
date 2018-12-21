@@ -46,7 +46,7 @@ code展示（面向对象编程）：
 ```javascript
     const count = {
         init: function() {
-            red.bind();
+            count.bind();
         },
         bind: function() {
             var year = 1990, count =0;
