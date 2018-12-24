@@ -109,8 +109,8 @@ $color: orange !default; //定义全局变量
 		color: $color; //调用局部变量
 	}
 }
-Span{
-	Color:	$color;
+span{
+	color:	$color;
 }
 ```
 
