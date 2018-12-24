@@ -41,9 +41,9 @@
 	
 7. 卸载
 
-  ```c
-  gem uninstall sass
-  ```
+	```c
+	gem uninstall sass
+	```
 
 8. 语法
 
