@@ -1,19 +1,15 @@
 # 一、HTML和CSS
 ### 1、你做的页面在哪些流览器测试过？这些浏览器的内核分别是什么?
 
-> IE: trident内核
->
-> Firefox：gecko内核
->
-> Safari:webkit内核
->
-> Opera:以前是presto内核，Opera现已改用Google Chrome的Blink内核
->
-> Chrome:Blink(基于webkit，Google与Opera Software共同开发)
+* IE: trident内核
+* Firefox：gecko内核
+* Safari:webkit内核
+* Opera:以前是presto内核，Opera现已改用Google Chrome的Blink内核
+* Chrome:Blink(基于webkit，Google与Opera Software共同开发)
 	
 ### 2、每个HTML文件里开头都有个很重要的东西，Doctype，知道这是干什么的吗？
 
->	<!DOCTYPE> 声明位于文档中的最前面的位置，处于 <html> 标签之前。此标签可告知浏览器文档使用哪种 HTML 或 XHTML 规范。（重点：告诉浏览器按照何种规范解析页面）
+><!DOCTYPE> 声明位于文档中的最前面的位置，处于 <html> 标签之前。此标签可告知浏览器文档使用哪种 HTML 或 XHTML 规范。（重点：告诉浏览器按照何种规范解析页面）
 	
 ### 3、Quirks模式是什么？它和Standards模式有什么区别
 
@@ -31,15 +27,10 @@
 >设置百分比的高度：在standards模式下，一个元素的高度是由其包含的内容来决定的，如果父元素没有设置百分比的高度，子元素设置一个百分比的高度是无效的用margin:0 auto设置水平居中：使用margin:0 auto在standards模式下可以使元素水平居中，但在quirks模式下却会失效。
 >
 >（还有很多，答出什么不重要，关键是看他答出的这些是不是自己经验遇到的，还是说都是看文章看的，甚至完全不知道。）
->
 
 ### 4、div+css的布局较table布局有什么优点？
 
-
-> 改版的时候更方便 只要改css文件。
->
-> 页面加载速度更快、结构化清晰、页面显示简洁。
->
-> 表现与结构相分离。
->
-> 易于优化（seo）搜索引擎更友好，排名更容易靠前。
+* 改版的时候更方便 只要改css文件。
+* 页面加载速度更快、结构化清晰、页面显示简洁。
+* 表现与结构相分离。
+* 易于优化（seo）搜索引擎更友好，排名更容易靠前。
