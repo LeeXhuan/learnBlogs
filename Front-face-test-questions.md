@@ -1,11 +1,15 @@
 # 一、HTML和CSS
 ### 1、你做的页面在哪些流览器测试过？这些浏览器的内核分别是什么?
 
-> 	IE: trident内核
-> 	Firefox：gecko内核
-> 	Safari:webkit内核
-> 	Opera:以前是presto内核，Opera现已改用Google Chrome的Blink内核
-> 	Chrome:Blink(基于webkit，Google与Opera Software共同开发)
+> IE: trident内核
+>
+> Firefox：gecko内核
+>
+> Safari:webkit内核
+>
+> Opera:以前是presto内核，Opera现已改用Google Chrome的Blink内核
+>
+> Chrome:Blink(基于webkit，Google与Opera Software共同开发)
 	
 ### 2、每个HTML文件里开头都有个很重要的东西，Doctype，知道这是干什么的吗？
 
@@ -31,8 +35,11 @@
 
 ### 4、div+css的布局较table布局有什么优点？
 
+
+> 改版的时候更方便 只要改css文件。
 >
->改版的时候更方便 只要改css文件。
-页面加载速度更快、结构化清晰、页面显示简洁。
-表现与结构相分离。
-易于优化（seo）搜索引擎更友好，排名更容易靠前。
+> 页面加载速度更快、结构化清晰、页面显示简洁。
+>
+> 表现与结构相分离。
+>
+> 易于优化（seo）搜索引擎更友好，排名更容易靠前。
