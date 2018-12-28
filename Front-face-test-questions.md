@@ -193,7 +193,161 @@
 
 * 被点击访问过的超链接样式不在具有`hover`和`active`了,解决方法是改变CSS属性的排列顺序:` L-V-H-A（link,visited,hover,active）`
 
+### 21、什么是Css Hack？ie6,7,8的hack分别是什么？
 
+* 针对不同的浏览器写不同的CSS code的过程，就是CSS hack。
+示例如下：
+	```css
+	#test{
+		width:300px;
+		height:300px;
+		background-color:blue;/*firefox*/
+		background-color:red\9;/*all ie*/
+		background-color:yellow;/*ie8*/
+		+background-color:pink; /*ie7*/
+		_background-color:orange;/*ie6*/
+	}
+	:root #test { background-color:purple\9; }/*ie9*/
+	@media all and (min-width:0px){ 
+		#test {background-color:black;}
+	}/*opera*/
+	@media screen and (-webkit-min-device-pixel-ratio:0){
+		#test {background-color:gray;}
+	}/*chrome and safari*/
+	```
+### 22、请用Css写一个简单的幻灯片效果页面
+
+* 答案：知道是要用css3。使用`animation`动画实现一个简单的幻灯片效果。
+```css
+.ani{
+	width:480px;
+	height:320px;
+	margin:50px auto;
+	overflow: hidden;
+	box-shadow:0 0 5px rgba(0,0,0,1);
+	background-size: cover;
+	background-position: center;
+	-webkit-animation-name: "loops";
+	-webkit-animation-duration: 20s;
+	-webkit-animation-iteration-count: infinite;
+}
+@-webkit-keyframes "loops" {
+	0% {
+		background:url(http://d.hiphotos.baidu.com/image/w%3D400/sign=c01e6adca964034f0fcdc3069fc27980/e824b899a9014c08e5e38ca4087b02087af4f4d3.jpg) no-repeat;             
+	}
+	25% {
+		background:url(http://b.hiphotos.baidu.com/image/w%3D400/sign=edee1572e9f81a4c2632edc9e72b6029/30adcbef76094b364d72bceba1cc7cd98c109dd0.jpg) no-repeat;
+	}
+	50% {
+		background:url(http://b.hiphotos.baidu.com/image/w%3D400/sign=937dace2552c11dfded1be2353266255/d8f9d72a6059252d258e7605369b033b5bb5b912.jpg) no-repeat;
+	}
+	75% {
+		background:url(http://g.hiphotos.baidu.com/image/w%3D400/sign=7d37500b8544ebf86d71653fe9f9d736/0df431adcbef76095d61f0972cdda3cc7cd99e4b.jpg) no-repeat;
+	}
+	100% {
+		background:url(http://c.hiphotos.baidu.com/image/w%3D400/sign=cfb239ceb0fb43161a1f7b7a10a54642/3b87e950352ac65ce2e73f76f9f2b21192138ad1.jpg) no-repeat;
+	}
+}
+```
+
+### 24、行内元素和块级元素的具体区别是什么？行内元素的`padding`和`margin`可设置吗？
+
+* 块级元素(`block`)特性：
+* 总是独占一行，表现为另起一行开始，而且其后的元素也必须另起一行显示;
+* 宽度(`width`)、高度(`height`)、内边距(`padding`)和外边距(`margin`)都可控制;
+* 内联元素(`inline`)特性：
+* 和相邻的内联元素在同一行;
+* 宽度(`width`)、高度(`height`)、内边距的`top/bottom(padding-top/padding-bottom)`和外边距的`top/bottom(margin-top/margin-bottom)`都不可改变（也就是`padding`和`margin`的`left`和`right`是可以设置的），就是里面文字或图片的大小。
+* 那么问题来了，浏览器还有默认的天生`inline-block`元素（拥有内在尺寸，可设置高宽，但不会自动换行），有哪些？
+* 答案：`<input  /> 、<img  /> 、<button></button> 、<texterea></texterea> 、<label></label>。`
+
+### 25、什么是外边距重叠？重叠的结果是什么？
+
+* 外边距重叠就是·margin-collapse·。
+* 在CSS当中，相邻的两个盒子（可能是兄弟关系也可能是祖先关系）的外边距可以结合成一个单独的外边距。这种合并外边距的方式被称为折叠，并且因而所结合成的外边距称为折叠外边距。
+* 折叠结果遵循下列计算规则：
+* 两个相邻的外边距都是正数时，折叠结果是它们两者之间较大的值。
+* 两个相邻的外边距都是负数时，折叠结果是两者绝对值的较大值。
+* 两个外边距一正一负时，折叠结果是两者的相加的和。
+
+### 26、`rgba()`和`opacity`的透明效果有什么不同？
+
+* ` rgba()`和`opacity`都能实现透明效果，但最大的不同是`opacity`作用于元素，以及元素内的所有内容的透明度，
+* 而`rgba()`只作用于元素的颜色或其背景色。（设置`rgba`透明的元素的子元素不会继承透明效果！）
+
+### 27、`css`中可以让文字在垂直和水平方向上重叠的两个属性是什么？
+* 垂直方向：`line-height`
+* 水平方向：`letter-spacing`
+* 那么问题来了，关于`letter-spacing`的妙用知道有哪些么？
+* 答案:可以用于消除`inline-block`元素间的换行符空格间隙问题。
+
+### 28、如何垂直居中一个浮动元素？
+	// 方法一：已知元素的高宽
+```css
+#div1{
+	background-color:#6699FF;
+	width:200px;
+	height:200px;
+	position: absolute;//父元素需要相对定位
+	top: 50%;
+	left: 50%;
+	margin-top:-100px ;//二分之一的height，width
+	margin-left: -100px;
+}
+```
+	//方法二:未知元素的高宽
+```css
+#div1{
+	width: 200px;
+	height: 200px;
+	background-color: #6699FF;
+	margin:auto;
+	position: absolute;//父元素需要相对定位
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+}
+```
+那么问题来了，如何垂直居中一个`<img  />`?（用更简便的方法。）
+```css
+#container{
+	//`<img  />`的容器设置如下
+	display:table-cell;
+	text-align:center;
+	vertical-align:middle;
+}
+```
+
+### 29、`px`和`em`的区别。
+* `px`和`em`都是长度单位，区别是，`px`的值是固定的，指定是多少就是多少，计算比较容易。`em`得值不是固定的，并且`em`会继承父级元素的字体大小。
+* 浏览器的默认字体高都是`16px`。所以未经调整的浏览器都符合: `1em=16px`。那么`12px=0.75em`, `10px=0.625em`。
+
+### 30、描述一个”`reset`”的CSS文件并如何使用它。知道`normalize.css`吗？你了解他们的不同之处？
+
+* 重置样式非常多，凡是一个前端开发人员肯定有一个常用的重置`CSS`文件并知道如何使用它们。他们是盲目的在做还是知道为什么这么做呢？原因是不同的浏览器对一些元素有不同的默认样式，如果你不处理，在不同的浏览器下会存在必要的风险，或者更有戏剧性的性发生。
+* 你可能会用`Normalize`来代替你的重置样式文件。它没有重置所有的样式风格，但仅提供了一套合理的默认样式值。既能让众多浏览器达到一致和合理，但又不扰乱其他的东西（如粗体的标题）。
+* 在这一方面，无法做每一个复位重置。它也确实有些超过一个重置，它处理了你永远都不用考虑的怪癖，像`HTML`的`audio`元素不一致或`line-height`不一致。
+
+### 31、`Sass、LESS`是什么？大家为什么要使用他们？
+* 他们是`CSS`预处理器。他是`CSS`上的一种抽象层。他们是一种特殊的语法/语言编译成`CSS`。
+例如`Less`是一种动态样式语言. 将`CSS`赋予了动态语言的特性，如`变量，继承，运算， 函数`. `LESS` 既可以在客户端上运行 (支持`IE 6+, Webkit, Firefox`)，也可一在服务端运行 (借助 `Node.js`)。
+* 为什么要使用它们？
+	- 结构清晰，便于扩展。
+	- 可以方便地屏蔽浏览器私有语法差异。这个不用多说，封装对浏览器语法差异的重复处理，减少无意义的机械劳动。
+	- 可以轻松实现多重继承。
+	- 完全兼容` CSS `代码，可以方便地应用到老项目中。`LESS` 只是在 `CSS` 语法上做了扩展，所以老的 `CSS` 代码也可以与`LESS`代码一同编译。
+
+### 32、`display:none`与`visibility:hidden`的区别是什么？
+* `display` : 隐藏对应的元素但不挤占该元素原来的空间。
+* `visibility`: 隐藏对应的元素并且挤占该元素原来的空间。
+* 即是，使用`CSS display:none`属性后，`HTML`元素（对象）的宽度、高度等各种属性值都将“丢失”;而使用`visibility:hidden`属性后，`HTML`元素（对象）仅仅是在视觉上看不见（完全透明），而它所占据的空间位置仍然存在。
+
+### 34、`CSS`中`link`和`@import`的区别是：
+* `Link`属于`html`标签，而`@import`是`CSS`中提供的
+* 在页面加载的时候，`link`会同时被加载，而`@import`引用的`CSS`会在页面加载完成后才会加载引用的`CSS`
+* `@import`只有在`ie5`以上才可以被识别，而`link`是`html`标签，不存在浏览器兼容性问题
+* `Link`引入样式的权重大于`@import`的引用（`@import`是将引用的样式导入到当前的页面中）
 
 
 
