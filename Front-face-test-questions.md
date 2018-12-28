@@ -7,9 +7,12 @@
 * Opera:以前是presto内核，Opera现已改用Google Chrome的Blink内核
 * Chrome:Blink(基于webkit，Google与Opera Software共同开发)
 	
-### 2、每个HTML文件里开头都有个很重要的东西，Doctype，知道这是干什么的吗？
+### 2、每个HTML文件里开头都有个很重要的东西，Doctype，知道这是干什么的吗？严格模式与混杂模式的区别？
 
 * `<!DOCTYPE>` 声明位于文档中的最前面的位置，处于 `<html>` 标签之前。此标签可告知浏览器文档使用哪种 HTML 或 XHTML 规范。（重点：告诉浏览器按照何种规范解析页面）
+* 严格模式下：页面排版及JS解析是以该浏览器支持的最高标准来执行
+* 混杂模式：不严格按照标准执行，主要用来兼容旧的浏览器，向后兼容
+
 	
 ### 3、Quirks模式是什么？它和Standards模式有什么区别
 
