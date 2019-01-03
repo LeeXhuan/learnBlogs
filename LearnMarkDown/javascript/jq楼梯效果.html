@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>锚点定位</title>
+	<style>
+		*{margin:0;padding: 0;}
+		.bgc{
+			width: 100%;
+			height: 300px;
+			background: greenyellow;
+			font-size: 150px;
+			text-align: center;
+			line-height: 300px;
+		}
+		.bgc:nth-of-type(2n){
+			background: pink;
+			height: 600px;
+			line-height: 600px;
+		}
+		ul{
+			list-style: none;
+			position: fixed;
+		    top: 10%;
+		    right: 10px;
+		}
+		.goto_floor{
+		    width: 80px;
+		    height: 26px;
+		    line-height: 26px;
+		    background: green;
+		    text-align: center;
+		    color: #fff;
+		    border: 1px solid pink;
+		    cursor: pointer;
+		}
+		.active{
+			background: black;
+		}
+	</style>
+</head>
+<body>
+	<div class="bgc floor1">1</div>
+	<div class="bgc floor2">2</div>
+	<div class="bgc floor3">3</div>
+	<div class="bgc floor4">4</div>
+	<div class="bgc floor5">5</div>
+	<div class="bgc floor6">6</div>
+	<div class="bgc floor7">7</div>
+	<div class="bgc floor8">8</div>
+	<div class="bgc floor9">9</div>
+	<div class="bgc floor10">10</div>
+	<div class="bgc floor11">11</div>
+	<div class="bgc floor12">12</div>
+	<div class="bgc floor13">13</div>
+	<div class="bgc floor14">14</div>
+	<div class="bgc floor15">15</div>
+	<div class="bgc floor16">16</div>
+	<div class="bgc floor17">17</div>
+	<div class="bgc floor18">18</div>
+	<div class="bgc floor19">19</div>
+	<div class="bgc floor20">20</div>
+	<ul class="menu">
+		<li class="goto_floor goto_floor1 active">1</li>
+		<li class="goto_floor goto_floor2">2</li>
+		<li class="goto_floor goto_floor3">3</li>
+		<li class="goto_floor goto_floor4">4</li>
+		<li class="goto_floor goto_floor5">5</li>
+		<li class="goto_floor goto_floor6">6</li>
+		<li class="goto_floor goto_floor7">7</li>
+		<li class="goto_floor goto_floor8">8</li>
+		<li class="goto_floor goto_floor9">9</li>
+		<li class="goto_floor goto_floor10">10</li>
+		<li class="goto_floor goto_floor11">11</li>
+		<li class="goto_floor goto_floor12">12</li>
+		<li class="goto_floor goto_floor13">13</li>
+		<li class="goto_floor goto_floor14">14</li>
+		<li class="goto_floor goto_floor15">15</li>
+		<li class="goto_floor goto_floor16">16</li>
+		<li class="goto_floor goto_floor17">17</li>
+		<li class="goto_floor goto_floor18">18</li>
+		<li class="goto_floor goto_floor19">19</li>
+		<li class="goto_floor goto_floor20">20</li>
+		<li class="goto_floor goto_top">返回顶部</li>
+	</ul>
+</body>
+<script type="text/javascript" src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+<script>
+	/**
+	 * [goToFloor 楼层定位]
+	 * @type {Object}
+	 */
+	var goToFloor = {
+		init: function(config) {
+			this.watchFloor(config);
+			this.goFloor(config);
+			this.goTop(config);
+		},
+		watchFloor: function(config) {
+			//监听滚动，高亮联动
+			$(config.className1).each( function(i, index) {
+	    		var windowTop = $(config.className1).eq(i).offset().top - 100;
+	    		$(window).scroll(function(){
+	                if($(this).scrollTop() >= windowTop ){
+	                    $(config.className2).eq(i).addClass(config.activeClassName).siblings().removeClass(config.activeClassName);
+	                }
+	            })
+			});
+		},
+		goFloor: function (config) {
+			//点击侧边
+			$(config.className2).not(config.className3).click(function() {
+				var name = config.className4 + ($(this).index() + 1);
+				$('body,html').animate({ 'scrollTop': $(name).offset().top}, config.speed);
+			})
+		},
+		goTop: function (config) {
+			$(config.className3).click(function(){
+				$('body,html').animate({ 'scrollTop':0 }, config.speed);
+			})
+		}
+	};
+	goToFloor.init({
+		className1: '.bgc',//[目标楼层的class类名]
+		className2: '.goto_floor',//[侧边点击的class类名]
+		className3: '.goto_top',//[返回顶部的class类名]
+		className4: '.floor',//[目标楼层公共部分的class类名比如： <div class=".floor1"></div> <div class=".floor2"></div>]
+		activeClassName: 'active',//[侧边高亮的class类名] 注意最后的这个className 没有点
+		speed: 600 // 滚动速度 越大越慢
+	});
+</script>
+</html>
