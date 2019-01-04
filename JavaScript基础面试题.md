@@ -311,20 +311,20 @@ alert(year + '-' + month + '-' + day);
 ### 30、为了保证页面输出安全，我们经常需要对一些特殊的字符进行转义，请写一个函数`escapeHtml`，将`<, >, &, “`进行转义
 ```js
 function escapeHtml(str) {
-//[<>”&]:中括号中字符只要其中的一个出现就代表满足条件
-//给replace第二个参数传递一个回调函数，回调函数中参数就是匹配结果，如果匹配不到就是null
-return str.replace(/[<>”&]/g, function(match) {
-    switch (match) {
-     case '<':
-    	return '<';
-     case '>':
-        return '>';
-     case '&':
-       	return '&amp;';
-     case '\':
-        return '&quot;';
-    }
-  });
+	//[<>”&]:中括号中字符只要其中的一个出现就代表满足条件
+	//给replace第二个参数传递一个回调函数，回调函数中参数就是匹配结果，如果匹配不到就是null
+	return str.replace(/[<>”&]/g, function(match) {
+	    switch (match) {
+	     case '<':
+	    	return '<';
+	     case '>':
+	        return '>';
+	     case '&':
+	       	return '&amp;';
+	     case '”': 
+	     	return '&quot;';
+	    }
+	});
 }
 ```
 ### 31、`foo = foo||bar` ，这行代码是什么意思？为什么要这样写？
