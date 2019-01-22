@@ -15,3 +15,8 @@
 * 第2步：登录`github`。
 
  	打开`setting`->`SSH keys`，点击右上角 `New SSH key`，把生成好的公钥`id_rsa.pub`放进 `key`输入框中，再为当前的`key`起一个`title`来区分每个`key`。
+	
+# 避免每次都需要输入用户名和密码
+```ruby
+$ git config --global credential.helper store
+```
