@@ -1,17 +1,6 @@
 # 在sublime中使用emmet实现代码补全
 ```json
 [{
-  "keys": [
-    "tab"
-  ],
-  "args": {
-    "action": "expand_abbreviation"
-  },
-  "command": "run_emmet_action",
-  "context": [{
-    "key": "emmet_action_enabled.expand_abbreviation"
-  }]
-}, {
   "keys": ["tab"],
   "command": "expand_abbreviation_by_tab",
   "context": [{
