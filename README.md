@@ -6,6 +6,6 @@
 1. [JQuery 优缺点](https://github.com/LeeXhuan/LearnMarkDown/blob/master/blog/jquery-merit-and-demerit.md)
 1. [NVM 相关文档](https://github.com/LeeXhuan/LearnMarkDown/blob/master/blog/nvm.md )
 1. [Sass 的安装和使用](https://github.com/LeeXhuan/LearnMarkDown/blob/master/blog/sass-installation-and-use.md)
-1. [Sublime 编译器 emmet 支持 jsx 补全设置](https://github.com/LeeXhuan/LearnMarkDown/blob/master/blog/sublime-emmet-jsx-set.md)
+1. [Sublime 编译器 Emmet 支持 Jsx 补全设置](https://github.com/LeeXhuan/LearnMarkDown/blob/master/blog/sublime-emmet-jsx-set.md)
 1. [Markdown 基本语法](https://github.com/LeeXhuan/LearnMarkDown/blob/master/blog/markdown-do.md)
 
