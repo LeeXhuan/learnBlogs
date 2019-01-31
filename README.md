@@ -1,5 +1,5 @@
 # 文档目录
-* [cmder安装笔记](https://github.com/LeeXhuan/LearnMarkDown/blob/master/Cmder%E5%AE%89%E8%A3%85%E7%AC%94%E8%AE%B0.md) 
+* [cmder安装笔记](https://github.com/LeeXhuan/LearnMarkDown/blob/master/cmder.md) 
 
 LearnMarkDown 
 ==================
