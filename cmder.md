@@ -1,5 +1,5 @@
 # Cmder安装笔记
-[快捷键](https://github.com/cmderdev/cmder#keyboard-shortcuts)
+[Cmder快捷键](https://github.com/cmderdev/cmder#keyboard-shortcuts)
 # 右键管理
 ## 添加（方法一）
 下载注册表文件[cmder_context_enable.reg](https://gist.githubusercontent.com/AWMooreCO/f1e2457f66ceb41efdf7/raw/01679ce047451aa8f1ca8497e02ca64fa87350f6/cmder_context_enable.reg)
